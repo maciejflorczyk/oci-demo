@@ -1,14 +1,9 @@
 ---
 - hosts: localhost
   vars:
-    config_file: "{{ lookup('env', 'MSAAS_DIRECTORY') }}/config.ini" 
     ansible_user: opc
   tasks:
-    - name: Get all the buckets in the namespace
-      oci_bucket_facts:
-        namespace_name: magic_compartment
-        compartment_id: ocid1.compartment.oc1..aaaaaaaapxmf3xsqq3jwitfpjik4xextpucs6fjzj3pbh6mz4wyvb22kj4pa
     - name: Update an instance's name
       oci_instance:
-        name: management 
+        name: management22 
         id: "ocid1.instance.oc1.eu-frankfurt-1.antheljtxkaqncic5oxfox7wvo6mebyb4ql7fwbciaeugniq5sfx4ptwdata"
