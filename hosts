@@ -1,0 +1,11 @@
+[local]
+localhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3.8
+
+[management]
+man.magicsubnet.magiccorp.oraclevcn.com
+
+[master]
+master01.magicsubnet.magiccorp.oraclevcn.com
+
+[worker]
+worker01.magicsubnet.magiccorp.oraclevcn.com
