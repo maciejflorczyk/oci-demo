@@ -1,5 +1,0 @@
-plugin: oci
- 
-# Optional fields to specify oci connection config:
-config_file: ~/.oci/config
-config_profile: DEFAULT
